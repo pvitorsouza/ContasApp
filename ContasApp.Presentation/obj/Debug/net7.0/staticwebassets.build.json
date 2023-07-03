@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "QQBn9PMKl+U5TdtYuVtdWXEa4x+gqizKYy1SmXOv4X8=",
+  "Source": "ContasApp.Presentation",
+  "BasePath": "_content/ContasApp.Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ContasApp.Presentation\\wwwroot",
+      "Source": "ContasApp.Presentation",
+      "ContentRoot": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\",
+      "BasePath": "_content/ContasApp.Presentation",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

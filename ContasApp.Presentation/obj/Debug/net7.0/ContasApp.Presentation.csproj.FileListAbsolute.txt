@@ -27,3 +27,13 @@ C:\aulasCoti\ContasApp\ContasApp.Presentation\obj\Debug\net7.0\ContasApp.Present
 C:\aulasCoti\ContasApp\ContasApp.Presentation\obj\Debug\net7.0\ref\ContasApp.Presentation.dll
 C:\aulasCoti\ContasApp\ContasApp.Presentation\obj\Debug\net7.0\ContasApp.Presentation.RazorAssemblyInfo.cache
 C:\aulasCoti\ContasApp\ContasApp.Presentation\obj\Debug\net7.0\ContasApp.Presentation.RazorAssemblyInfo.cs
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\Dapper.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\ContasApp.Data.dll
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\ContasApp.Data.pdb
+C:\aulasCoti\ContasApp\ContasApp.Presentation\obj\Debug\net7.0\ContasApp.Presentation.csproj.CopyComplete

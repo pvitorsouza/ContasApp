@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YovUTJNeHWFVUiXQ5DcP7hQhHob5Jhy7nXPOrX2UnhU=",
+  "Hash": "ucevESgAI2V2W7XpFV33566FZNlXCm5szw8U1VscGWg=",
   "Source": "ContasApp.Presentation",
   "BasePath": "_content/ContasApp.Presentation",
   "Mode": "Default",
@@ -561,6 +561,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+      "Identity": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\css\\dataTables.min.css",
+      "SourceId": "ContasApp.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\",
+      "BasePath": "_content/ContasApp.Presentation",
+      "RelativePath": "css/dataTables.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dataTables.min.css"
+    },
+    {
       "Identity": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\bootstrap.bundle.js",
       "SourceId": "ContasApp.Presentation",
       "SourceType": "Discovered",
@@ -763,6 +780,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\dataTables.min.js",
+      "SourceId": "ContasApp.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\",
+      "BasePath": "_content/ContasApp.Presentation",
+      "RelativePath": "js/dataTables.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dataTables.min.js"
+    },
+    {
+      "Identity": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\highcharts.js",
+      "SourceId": "ContasApp.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\",
+      "BasePath": "_content/ContasApp.Presentation",
+      "RelativePath": "js/highcharts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\highcharts.js"
+    },
+    {
+      "Identity": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\jquery-3.7.0.min.js",
+      "SourceId": "ContasApp.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\",
+      "BasePath": "_content/ContasApp.Presentation",
+      "RelativePath": "js/jquery-3.7.0.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-3.7.0.min.js"
     }
   ]
 }

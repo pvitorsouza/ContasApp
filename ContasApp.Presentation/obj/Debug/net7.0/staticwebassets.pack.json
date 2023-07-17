@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
     },
     {
+      "Id": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\css\\dataTables.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.min.css"
+    },
+    {
       "Id": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
     },
@@ -175,6 +179,18 @@
     {
       "Id": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.min.js"
+    },
+    {
+      "Id": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\highcharts.js",
+      "PackagePath": "staticwebassets\\js\\highcharts.js"
+    },
+    {
+      "Id": "C:\\aulasCoti\\ContasApp\\ContasApp.Presentation\\wwwroot\\js\\jquery-3.7.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.7.0.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ContasApp.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",

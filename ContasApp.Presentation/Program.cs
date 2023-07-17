@@ -1,7 +1,17 @@
+using ContasApp.Presentation.Filters;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//configurando e ativando autenticação por Cookies
+builder.Services.Configure<CookiePolicyOptions>
+    (options => { options.MinimumSameSitePolicy = SameSiteMode.None; });
+builder.Services.AddAuthentication
+    (CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie();
 
 var app = builder.Build();
 
@@ -14,12 +24,19 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseMiddleware<CacheControlFilter>();
+
+app.UseCookiePolicy();
+app.UseAuthentication();
 app.UseAuthorization();
 
 //Configurando o padrão de navegação do projeto /Controllers/Views
-//E definindo a página inicial do projeto
+//e definindo a página inicial do projeto
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();
+
+
+

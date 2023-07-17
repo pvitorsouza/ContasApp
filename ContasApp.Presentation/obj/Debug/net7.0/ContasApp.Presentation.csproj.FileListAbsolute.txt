@@ -37,3 +37,4 @@ C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\runtimes\win\lib\
 C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\ContasApp.Data.dll
 C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\ContasApp.Data.pdb
 C:\aulasCoti\ContasApp\ContasApp.Presentation\obj\Debug\net7.0\ContasApp.Presentation.csproj.CopyComplete
+C:\aulasCoti\ContasApp\ContasApp.Presentation\bin\Debug\net7.0\Newtonsoft.Json.dll

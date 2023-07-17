@@ -31,26 +31,28 @@ namespace ContasApp.Data.Repositories
                     @Id,
                     @Nome,
                     @Email,
-                    @Senha,
+                    CONVERT(VARCHAR(32), HASHBYTES('MD5', @Senha), 2),
                     @DataHoraCriacao)
             ";
 
             //abrindo conexão com o banco de dados..
             using (var connection = new SqlConnection(SqlServerSettings.GetConnectionString()))
             {
-                //executando o comando SQL no banco de dados 
+                //executando o comando SQL no banco de dados
                 connection.Execute(query, usuario);
             }
         }
 
+        /// <summary>
+        /// Método para atualizar os dados do usuário no banco de dados
+        /// </summary>
         public void Update(Usuario usuario)
         {
             var query = @"
-                UPADATE USUARIO
+                UPDATE USUARIO 
                 SET
                     NOME = @Nome,
-                    EMAIL = @Email,
-                    SENHA = @Senha
+                    EMAIL = @Email
                 WHERE
                     ID = @Id
             ";
@@ -62,7 +64,26 @@ namespace ContasApp.Data.Repositories
         }
 
         /// <summary>
-        /// Método pata escluir usuario do banco de dados
+        /// Método para atualizar somente a senha do usuário
+        /// </summary>
+        public void UpdatePassword(Guid idUsuario, string senha)
+        {
+            var query = @"
+                UPDATE USUARIO
+                SET
+                    SENHA = CONVERT(VARCHAR(32), HASHBYTES('MD5', @Senha), 2)
+                WHERE
+                    ID = @IdUsuario
+            ";
+
+            using (var connection = new SqlConnection(SqlServerSettings.GetConnectionString()))
+            {
+                connection.Execute(query, new { @IdUsuario = idUsuario, @Senha = senha });
+            }
+        }
+
+        /// <summary>
+        /// Método para excluir um usuário do banco de dados
         /// </summary>
         public void Delete(Usuario usuario)
         {
@@ -78,8 +99,8 @@ namespace ContasApp.Data.Repositories
         }
 
         /// <summary>
-        /// Método para consultar 1 usuario no banco de dados através do ID
-        /// </summary>       
+        /// Método para consultar 1 usuário no banco de dados através do ID
+        /// </summary>
         public Usuario? GetById(Guid id)
         {
             var query = @"
@@ -93,7 +114,7 @@ namespace ContasApp.Data.Repositories
         }
 
         /// <summary>
-        /// Método para consultar 1 usuario atraves do email
+        /// Método para consultar 1 usuário no banco de dados através do Email
         /// </summary>
         public Usuario? GetByEmail(string email)
         {
@@ -104,25 +125,27 @@ namespace ContasApp.Data.Repositories
             using (var connection = new SqlConnection(SqlServerSettings.GetConnectionString()))
             {
                 return connection.Query<Usuario>(query, new { @Email = email }).FirstOrDefault();
-            }           
-           
+            }
+  
         }
 
         /// <summary>
-        /// Método para consultar 1 usuario no banco de dados atraves do email e a senha 
-        /// </summary>       
+        /// Método para consultar 1 usuário no banco de dados através do Email e da Senha
+        /// </summary>
         public Usuario? GetByEmailAndSenha(string email, string senha)
         {
             var query = @"
-                SELECT * FROM USUARIO WHERE EMAIL = @Email AND SENHA = @Senha
+                SELECT * FROM USUARIO 
+                WHERE EMAIL = @Email 
+                AND SENHA = CONVERT(VARCHAR(32), HASHBYTES('MD5', @Senha), 2)
             ";
 
             using (var connection = new SqlConnection(SqlServerSettings.GetConnectionString()))
             {
-                return connection.Query(query, new { @Email = email, @Senha = senha }).FirstOrDefault();
+                return connection.Query<Usuario>(query, new { @Email = email, @Senha = senha }).FirstOrDefault();
             }
         }
-
+  
     }
 }
 
